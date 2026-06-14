@@ -1,28 +1,35 @@
 <!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>성장가속 우선 검토</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 <style>
- body{margin:0;background:#0f1115;color:#e6e8ec;font-family:"Segoe UI","Malgun Gothic",sans-serif;font-size:14px}
- .wrap{max-width:1180px;margin:0 auto;padding:20px}
- h1{font-size:19px;margin:0 0 4px} .sub{color:#8b93a3;font-size:13px;margin-bottom:14px}
- .badge{display:inline-block;background:#1d212b;border:1px solid #2a2f3a;border-radius:8px;padding:6px 12px;margin-bottom:14px}
- table{border-collapse:collapse;width:100%;font-size:13px}
- th,td{border-bottom:1px solid #222732;padding:7px 8px;text-align:right;white-space:nowrap}
- th{color:#8b93a3;font-weight:600;position:sticky;top:0;background:#0f1115}
- td.tk{text-align:left;font-weight:700;color:#6ea8fe} td.mut,td.fl{text-align:left}
+ :root{--bg:#0f1115;--panel:#161a21;--panel2:#1c2029;--line:#262b36;--txt:#e8eaee;--mut:#8b93a3;--mut2:#5d6470;--accent:#6ea8fe}
+ body{margin:0;background:var(--bg);color:var(--txt);font-family:'Pretendard Variable','Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}
+ .wrap{max-width:1180px;margin:0 auto;padding:26px 22px 40px}
+ .kicker{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);font-weight:700}
+ h1{font-size:23px;margin:7px 0 5px;font-weight:750;letter-spacing:-.3px} .sub{color:var(--mut);font-size:13.5px;margin-bottom:16px}
+ .badge{display:inline-block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin-bottom:18px;font-size:13px;color:var(--mut)}
+ table{border-collapse:separate;border-spacing:0;width:100%;font-size:13px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+ th,td{border-bottom:1px solid var(--line);padding:9px 9px;text-align:right;white-space:nowrap}
+ tbody tr:last-child td{border-bottom:0}
+ th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--panel2);font-size:11.5px;letter-spacing:.3px}
+ tbody tr:hover{background:#1a2029}
+ td.tk{text-align:left;font-weight:750;color:var(--accent)} td.mut,td.fl{text-align:left}
  th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3),th:last-child,td:last-child,th:nth-child(9),td:nth-child(9){text-align:left}
  td:first-child,th:first-child{text-align:left}
- .mut{color:#5d6470} .sm{font-size:11px} .mono{font-variant-numeric:tabular-nums} .big{font-weight:700}
- .tier{font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px}
- .tier.t1{background:#16442a;color:#5fd28a} .tier.t2{background:#3a3416;color:#e0c64a}
- .tier.t3{background:#23304a;color:#9bb8e8} .tier.t0{background:#2a2f3a;color:#8b93a3}
- tr.t1 td{background:#11201640} tr.t0{opacity:.6}
- .flag{display:inline-block;background:#3a1f1f;color:#e88;border-radius:4px;padding:0 5px;font-size:10.5px;margin-right:3px}
- .foot{color:#5d6470;font-size:11px;margin-top:14px;line-height:1.7}
+ .mut{color:var(--mut2)} .sm{font-size:11px} .mono{font-variant-numeric:tabular-nums} .big{font-weight:700}
+ .tier{font-size:11px;font-weight:700;padding:1px 8px;border-radius:999px}
+ .tier.t1{background:#13301f;color:#56cf8e} .tier.t2{background:#2e2510;color:#e6b94e}
+ .tier.t3{background:#1a2331;color:#9bb8e8} .tier.t0{background:#22262f;color:#8b93a3}
+ tr.t1 td{background:#10201634} tr.t0{opacity:.55}
+ .flag{display:inline-block;background:#311714;color:#f0726a;border-radius:999px;padding:0 7px;font-size:10.5px;margin-right:3px}
+ .foot{color:var(--mut2);font-size:11.5px;margin-top:16px;line-height:1.7}
 </style></head><body><div class="wrap">
-<h1>🚀 성장가속 우선 검토</h1>
+<div class="kicker">GROWTH · ACCELERATION</div>
+<h1>성장가속 우선 검토</h1>
 <div class="sub">매출 성장 <b>가속</b>(전분기보다 빨라짐) + 밸류에이션 + 회계 점검. 디스코드 알림과 동일 데이터.</div>
 <div class="badge">기준 <b>2026-06-10</b> · 가속 통과 69종목 — <b style="color:#5fd28a">1차 우선 6</b> · <span style="color:#e0c64a">2차 17</span></div>
-<table><tr><th>구분</th><th>티커</th><th>섹터</th><th>매출성장</th><th>가속(Δ)</th><th>P/S</th><th>영업이익률</th><th>밸류판정</th><th>플래그</th><th>분기</th></tr>
+<table><thead><tr><th>구분</th><th>티커</th><th>섹터</th><th>매출성장</th><th>가속(Δ)</th><th>P/S</th><th>영업이익률</th><th>밸류판정</th><th>플래그</th><th>분기</th></tr></thead>
+<tbody>
 <tr class="t1">
           <td><span class="tier t1">1차 우선</span></td>
           <td class="tk">OMC</td>
@@ -714,7 +721,7 @@
           <td>🚩고밸류</td>
           <td class="fl"></td>
           <td class="mut sm">2026-03-31</td></tr>
-</table>
+</tbody></table>
 <div class="foot">
 가속(Δ) = 이번 분기 매출성장률 − 직전 추세(클수록 가속). P/S 밴드: 후보군 33%/66% 분위 기준 싸다/보통/비싸다.<br>
 1차 우선 = ✅저밸류 + 회계 깨끗 / 2차 = ✅저밸류(회계의심) 또는 △중밸류 깨끗. 플래그는 회계 주의신호 → 공시 원문 직접 확인 권장. 투자 판단 보조용·자동 생성.
